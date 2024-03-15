@@ -430,7 +430,7 @@ async def media_extracter(c: Client, m: Message):
             mid=rmess.id
             file_name = media.file_name
             if file_name is None:
-                await m.reply("File name not found; goto @yashoswalyo")
+                await m.reply("File name not found; goto @MS_Samad")
                 return
             markup = bMaker.makebuttons(
                 set1=["Audio", "Subtitle", "Cancel"],
@@ -488,10 +488,10 @@ async def about_handler(c: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👨‍💻Developer👨‍💻", url="https://t.me/yashoswalyo")],
+                [InlineKeyboardButton("👨‍💻Developer👨‍💻", url="https://t.me/MS_Samad")],
                 [
                     InlineKeyboardButton(
-                        "🏘Source Code🏘", url="https://github.com/yashoswalyo/MERGE-BOT"
+                        "🏘Source Code🏘", url="https://te.legra.ph/file/fecf4e578f159374f33c4.mp4"
                     ),
                     InlineKeyboardButton(
                         "🤔Deployed By🤔", url=f"https://t.me/{Config.OWNER_USERNAME}"
@@ -741,7 +741,7 @@ if __name__ == "__main__":
         with userBot:
             userBot.send_message(
                 chat_id=int(LOGCHANNEL),
-                text="Bot booted with Premium Account,\n\n  Thanks for using <a href='https://github.com/yashoswalyo/merge-bot'>this repo</a>",
+                text="Bot booted with Premium Account,\n\n  Thanks for using <a href='https://t.me/MS_Samad'>𝕄𝕊-𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣</a>",
                 disable_web_page_preview=True,
             )
             user = userBot.get_me()
